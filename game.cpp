@@ -28,6 +28,7 @@ public class Game{
             }
         }
     }
+}
 
     void Command(int x, int y, int command){
 
@@ -52,9 +53,7 @@ public class Game{
         }
         display.DrawCell(x, y);
     }
-
-
-    private void Open(int x, int y)
+    display.DrawCell(x, y);
 }
 
 void Game::init(int _totalMines):totalMines(_totalMines);
@@ -74,6 +73,7 @@ void Game::PlaceMines(){
         }
     }
 }
+
 
 public class Cell{
 
@@ -104,4 +104,9 @@ public class Cell{
         //return number of adjacent mines
         return 0;
     }
+
+}
+
+public void Cell::Flag(){
+    isFlagged = !isFlagged
 }
